@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { Form, Input, Button, message, Divider } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { loginUser } from 'store/ducks';
-import GoogleButton from 'components/GoogleButton';
 
 const LoginForm: React.FC = () => {
   const dispatch = useDispatch();
@@ -29,8 +28,6 @@ const LoginForm: React.FC = () => {
           Log in
         </Button>
       </Form.Item>
-      <Divider plain>Or</Divider>
-      <GoogleButton />
     </Form>
   );
 };
